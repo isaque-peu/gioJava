@@ -149,3 +149,198 @@ public class ExibirString {
     }
 }
 //exercicio 10//
+public class Main {
+    public static void main(String[] args) {
+        String texto = "Java";
+        System.out.println("Quantidade de caracteres: " + texto.length());
+    }
+}
+//exercicio 11//
+public class Main {
+    public static void main(String[] args) {
+        String texto = "java";
+        System.out.println(texto.toUpperCase());
+    }
+}
+//exercicio 12//
+public class Main {
+    public static void main(String[] args) {
+        String texto = "JAVA";
+        System.out.println(texto.toLowerCase());
+    }
+}
+//exercicio 13//
+public class Main {
+    public static void main(String[] args) {
+        String frase = "Eu gosto de Java";
+        
+        if (frase.contains("Java")) {
+            System.out.println("A frase contém a palavra!");
+        } else {
+            System.out.println("Não contém!");
+        }
+    }
+}
+//exercicio 14//
+public class Main {
+    public static void main(String[] args) {
+        String a = "Java";
+        String b = "Java";
+
+        if (a.equals(b)) {
+            System.out.println("São iguais");
+        } else {
+            System.out.println("São diferentes");
+        }
+    }
+}
+//exercicio 15//
+public class Main {
+    public static void main(String[] args) {
+        String texto = "Java";
+
+        char primeiro = texto.charAt(0);
+        char ultimo = texto.charAt(texto.length() - 1);
+
+        System.out.println("Primeiro: " + primeiro);
+        System.out.println("Último: " + ultimo);
+    }
+}
+// exercicio 16//
+public class Main {
+    public static void main(String[] args) {
+        String palavra = "programacao";
+        int contador = 0;
+
+        for (int i = 0; i < palavra.length(); i++) {
+            char c = palavra.charAt(i);
+
+            if ("aeiouAEIOU".indexOf(c) != -1) {
+                contador++;
+            }
+        }
+
+        System.out.println("Quantidade de vogais: " + contador);
+    }
+}
+// exercicio 17//
+public class Main {
+    public static void main(String[] args) {
+        int[][] matriz = {
+            {1, 2},
+            {3, 4}
+        };
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+//exercicio 18//
+public class Main {
+    public static void main(String[] args) {
+        int[][] matriz = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int soma = 0;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                soma += matriz[i][j];
+            }
+        }
+
+        System.out.println("Soma: " + soma);
+    }
+}
+//exercicio 19//
+public class Main {
+    public static void main(String[] args) {
+        int[][] matriz = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(matriz[i][i]);
+        }
+    }
+}
+//exercicio 20//
+public class Main {
+    public static void main(String[] args) {
+        int[][] matriz = {
+            {1, 2, 3},
+            {4, 6, 7},
+            {8, 9, 10}
+        };
+
+        int contador = 0;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (matriz[i][j] % 2 == 0) {
+                    contador++;
+                }
+            }
+        }
+
+        System.out.println("Quantidade de pares: " + contador);
+    }
+}
+//exercicio A//
+public class Main {
+    public static void main(String[] args) {
+        String[] nomes = {"Ana", "Carlos", "Eduardo", "Joao"};
+
+        for (String nome : nomes) {
+            if (nome.length() > 5) {
+                System.out.println(nome);
+            }
+        }
+    }
+}
+//exercicio B//
+public class Main {
+    public static void main(String[] args) {
+        int[][] matriz = {
+            {1, 20, 3},
+            {4, 5, 60},
+            {7, 8, 9}
+        };
+
+        int maior = matriz[0][0];
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (matriz[i][j] > maior) {
+                    maior = matriz[i][j];
+                }
+            }
+        }
+
+        System.out.println("Maior valor: " + maior);
+    }
+}
+//exercicio C//
+public class Main {
+    public static void main(String[] args) {
+        String texto = "banana";
+        int contador = 0;
+
+        for (int i = 0; i < texto.length(); i++) {
+            if (texto.charAt(i) == 'a' || texto.charAt(i) == 'A') {
+                contador++;
+            }
+        }
+
+        System.out.println("Quantidade de 'a': " + contador);
+    }
+}
